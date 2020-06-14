@@ -1,0 +1,122 @@
+import React from 'react';
+
+import { Text , TextInput , View , Image , StyleSheet } from 'react-native';
+
+function Header(){
+  return(
+    <View style={styles.text2}>
+     <Text> this is shoug's world ;)</Text>
+    </View>
+  )
+}
+
+function Footer(){
+  return(
+    <View style={styles.text3}>
+      <Text> @Shoug 2020 </Text>
+    </View>
+  )
+}
+
+export default function App() {
+  return (
+    <View style={styles.style_view}>
+      <Header />
+
+     <Text style={styles.text}>
+     welcom to shoug's world
+     </Text>
+
+     <Text style={styles.text1}>
+    lets get started!
+    </Text>
+
+     <Text style={styles.text4}>
+       Inter your full name:
+    </Text>
+
+    <TextInput style={styles.input_style}
+     />
+
+   
+    <Image
+       style={styles.logo}
+    source={{
+      uri:'https://reactnative.dev/img/tiny_logo.png',
+      }}
+     />
+     <Footer />
+    </View>
+  );
+}
+const styles = StyleSheet.create({
+
+  style_view:{
+    backgroundColor:"Beige",
+  },
+
+text:{
+   backgroundColor:"purple",
+   color:"pink",
+   alignItems: "center",
+   textAlign: "center",
+   fontSize: 26,
+   margin: 30,
+   fontWeight: 'bold',
+   marginTop: 130,
+
+},
+
+text1:{
+   color: "pink",
+   fontSize: 30,
+   alignItems: "center",
+   textAlign: "center",
+   backgroundColor:"purple",
+   fontWeight:'bold',
+   margin:30,
+   marginTop: 10,
+},
+
+text2:{
+   color: "black",
+   marginTop: 50,
+   margin: 10,
+   fontSize: 10,
+  },
+
+text3:{
+color: "black",
+marginTop:-10,
+fontSize:10,
+margin:30,
+textAlign: "left",
+left:-5,
+},
+
+text4:{
+  color: "pink",
+  marginTop:10,
+  fontSize:30,
+  left:30,
+  margin:30,
+  fontWeight: 'bold',
+},
+
+logo:{
+  width:60,
+  height:58,
+  left: 275,
+  marginTop:300,
+},
+
+input_style:{
+  height:40,
+  borderColor: 'pink',
+  borderWidth:8,
+  width:290,
+  left:40,
+  marginTop:-20,
+}
+
+})
